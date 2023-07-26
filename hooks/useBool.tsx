@@ -6,7 +6,7 @@ export const useModal = (
 	const [bool, setBool] = useState<Boolean>(boolValue || false);
 
 	const toggle = (boolToggle?: boolean) => {
-		setBool(bool === undefined ? !boolToggle : bool);
+		setBool(bool === undefined ? !bool : boolToggle);
 	};
 
 	return [bool, toggle];
